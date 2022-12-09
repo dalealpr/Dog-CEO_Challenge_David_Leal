@@ -537,65 +537,64 @@ header {
       .navBar .navBar_aBtn_Cont .navBar_heart {
         width: 34px; } }
 
-@media (max-width: 425px) {
-  .navBar {
-    width: 100%;
-    height: 100px;
+@media (max-width: 770px) {
+  header {
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .navBar .navBar_logo {
-      width: 140px;
-      cursor: pointer;
-      margin-left: 50px; }
-    .navBar .navBar_aBtn_Cont {
-      height: 50px;
-      margin-right: 60px;
-      display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #222222; }
+    header .header_cont {
+      width: 100%;
+      height: 730px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
       align-items: center; }
-      .navBar .navBar_aBtn_Cont .navBar_aCont {
-        height: 35px;
-        display: flex;
-        margin-right: 50px;
-        gap: 30px; }
-        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li {
-          width: 110px;
-          height: 100%;
-          display: flex;
-          align-items: center; }
-          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .navBar_a {
-            width: 100%;
-            height: 100%;
-            font-weight: 500;
-            color: #ff0048;
-            border: solid 2px #ff0048;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center; }
-          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnnull {
-            width: 100%;
-            height: 100%;
-            font-weight: 500;
-            color: #ff0048;
-            border: solid 2px #ff0048;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center; }
-          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnactive {
-            width: 100%;
-            height: 100%;
-            font-weight: 500;
-            background: #ff0048;
+      header .header_cont .header_textCont {
+        width: 75%;
+        margin-left: 100px; }
+        header .header_cont .header_textCont .header_textTitle {
+          font-size: 65px;
+          color: var(--color-title);
+          margin-bottom: 30px; }
+        header .header_cont .header_textCont .header_textP {
+          font-size: 22px;
+          font-weight: 300;
+          margin-bottom: 35px; }
+        header .header_cont .header_textCont .btn_adoptar {
+          padding: 16px 0px;
+          font-size: 17px;
+          font-weight: 500;
+          background: var(--color-title);
+          border-radius: 25px; }
+          header .header_cont .header_textCont .btn_adoptar .a_adoptaAqui {
+            padding: 16px 40px;
             color: white;
-            border: solid 2px #ff0048;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center; }
-          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .home {
-            background: #ff0048;
-            color: white; }
-      .navBar .navBar_aBtn_Cont .navBar_heart {
-        width: 34px; } }
+            border-radius: 25px; }
+      header .header_cont .header_img {
+        margin: 0 auto;
+        width: 500px; }
+    header .header_cot2 {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      background: black; }
+      header .header_cot2 .header_cont2 {
+        width: 75%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center; }
+        header .header_cot2 .header_cont2 .header_img2 {
+          margin: 0 auto;
+          width: 500px; }
+        header .header_cot2 .header_cont2 .header_textP2 {
+          margin-left: 30px;
+          font-size: 22px;
+          font-weight: 300;
+          background: var(--color-title);
+          padding: 10px;
+          color: white;
+          border-radius: 20px; } }
