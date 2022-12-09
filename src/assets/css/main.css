@@ -1,0 +1,573 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none; }
+
+s
+ul, ol {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.floatLeft {
+  float: left;
+  padding: .5em .5em .5em 0; }
+
+.floatRight {
+  float: right;
+  padding: .5em 0 .5em .5em; }
+
+img {
+  width: 100px; }
+
+button {
+  all: unset;
+  cursor: pointer; }
+
+* {
+  color: #000000;
+  font-family: 'Roboto', sans-serif; }
+
+:root {
+  --color-body: white;
+  --color-title: #ff0048; }
+
+body {
+  background: var(--color-body); }
+
+.navBar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navBar .navBar_logo {
+    width: 140px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 50px; }
+  .navBar .hamNav_list {
+    display: none; }
+  .navBar .Nav_Hamb_cont {
+    display: none;
+    margin-left: 35px; }
+    .navBar .Nav_Hamb_cont .menuH_img {
+      width: 40px; }
+    .navBar .Nav_Hamb_cont .menuH_imgx {
+      display: none; }
+  .navBar .hamb_List_cont {
+    width: 50%;
+    height: 453px;
+    background: #222222;
+    position: absolute;
+    margin-top: 99px;
+    top: 0;
+    transform: translateY(-130%); }
+    .navBar .hamb_List_cont .hamb_List_aCont {
+      width: 100%;
+      height: 100%; }
+      .navBar .hamb_List_cont .hamb_List_aCont .navBar_li {
+        width: 99%;
+        height: 110px;
+        margin: 2px 2px;
+        background-color: #ff0048;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .navBar .hamb_List_cont .hamb_List_aCont .navBar_li .hamb_a {
+          width: 100%;
+          height: 100%;
+          color: white;
+          font-size: 24px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+  .navBar .navBar_aBtn_Cont {
+    height: 50px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center; }
+    .navBar .navBar_aBtn_Cont .navBar_aCont {
+      height: 35px;
+      display: flex;
+      margin-right: 50px;
+      gap: 30px; }
+      .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li {
+        width: 110px;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .navBar_a {
+          width: 100%;
+          height: 100%;
+          font-weight: 500;
+          color: #ff0048;
+          border: solid 2px #ff0048;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnnull {
+          width: 100%;
+          height: 100%;
+          font-weight: 500;
+          color: #ff0048;
+          border: solid 2px #ff0048;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnactive {
+          width: 100%;
+          height: 100%;
+          font-weight: 500;
+          background: #ff0048;
+          color: white;
+          border: solid 2px #ff0048;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .home {
+          background: #ff0048;
+          color: white; }
+    .navBar .navBar_aBtn_Cont .navBar_heart {
+      width: 34px; }
+
+.header_cont {
+  width: 100%;
+  height: 730px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .header_cont .header_textCont {
+    width: 75%;
+    margin-left: 100px; }
+    .header_cont .header_textCont .header_textTitle {
+      font-size: 65px;
+      color: var(--color-title);
+      margin-bottom: 30px; }
+    .header_cont .header_textCont .header_textP {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 35px; }
+    .header_cont .header_textCont .btn_adoptar {
+      padding: 16px 0px;
+      font-size: 17px;
+      font-weight: 500;
+      background: var(--color-title);
+      border-radius: 25px; }
+      .header_cont .header_textCont .btn_adoptar .a_adoptaAqui {
+        padding: 16px 40px;
+        color: white;
+        border-radius: 25px; }
+  .header_cont .header_img {
+    margin: 0 auto;
+    width: 500px; }
+
+.perros_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .perros_cont .cont_listas {
+    width: 80%;
+    height: 70px;
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%; }
+  .perros_cont .img_perrosCont {
+    width: 80%;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); }
+    .perros_cont .img_perrosCont .cardPerro_cont {
+      width: 220px;
+      height: 250px;
+      border: 1px solid #bdbdbd;
+      margin: 40px 0px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .perros_cont .img_perrosCont .cardPerro_cont .cardPerro_img {
+        width: 100%;
+        height: 60%;
+        border-radius: 15px; }
+      .perros_cont .img_perrosCont .cardPerro_cont .btnCard_adoptar {
+        width: 45%;
+        height: 30px;
+        margin-top: 20px;
+        background: #ff0048;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        font-size: 14px; }
+      .perros_cont .img_perrosCont .cardPerro_cont .carg {
+        height: 500px; }
+
+.carg {
+  height: 500px; }
+
+.nosotros_cont .img_nosotros {
+  width: 100%;
+  height: 450px;
+  background: url(../img/nosotros/perro_fondo_nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  .nosotros_cont .img_nosotros .titulo_nosotros {
+    margin-left: 10%;
+    color: white;
+    font-size: 70px;
+    border-bottom: 4px solid white; }
+
+.nosotros_cont .nosotros_sectCont {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; }
+  .nosotros_cont .nosotros_sectCont .nosotros_textCont {
+    width: 60%;
+    display: flex;
+    align-items: center; }
+    .nosotros_cont .nosotros_sectCont .nosotros_textCont .nosotros_p {
+      font-size: 20px; }
+  .nosotros_cont .nosotros_sectCont .nosotros_imgCont {
+    display: flex;
+    align-items: center; }
+    .nosotros_cont .nosotros_sectCont .nosotros_imgCont .img_refugio {
+      width: 450px; }
+
+.contacto_cont {
+  width: 100%;
+  height: 820px;
+  background: url(../img/contacto/perro_fondo_contacto2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto_cont .form_cont {
+    background: white;
+    width: 30%;
+    height: 85%;
+    border-radius: 35px; }
+    .contacto_cont .form_cont .form_title {
+      text-align: center;
+      font-size: 23px;
+      margin-top: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d6d6d6; }
+    .contacto_cont .form_cont .usuario {
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+      margin-top: 35px; }
+      .contacto_cont .form_cont .usuario .label {
+        margin-bottom: 14px;
+        font-size: 17px;
+        color: #808080; }
+      .contacto_cont .form_cont .usuario .input {
+        width: 83%;
+        border-bottom: 1px solid #aaaaaa;
+        font-size: 16px; }
+      .contacto_cont .form_cont .usuario .mensaje {
+        width: 83%;
+        height: 140px;
+        resize: none;
+        font-size: 16px; }
+    .contacto_cont .form_cont .btn_enviar {
+      width: 76%;
+      margin-top: 35px;
+      margin-left: 60px;
+      background: var(--color-title);
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 13px 0;
+      border-radius: 20px; }
+
+.footer .redes_cont {
+  height: 50px;
+  background: var(--color-title);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px; }
+  .footer .redes_cont .redes_img {
+    width: 32px;
+    cursor: pointer; }
+
+.footer .footer_contText {
+  height: 180px;
+  background: #292929;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer .footer_contText .navBar_logo {
+    width: 120px;
+    margin-bottom: 15px; }
+  .footer .footer_contText .footer_text {
+    font-size: 14px;
+    color: white;
+    font-weight: 300; }
+
+@media (max-width: 1440px) {
+  .perros_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .perros_cont .cont_listas {
+      width: 80%;
+      height: 70px;
+      background: #dddddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10%; }
+    .perros_cont .img_perrosCont {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); }
+      .perros_cont .img_perrosCont .cardPerro_cont {
+        width: 190px;
+        height: 220px;
+        border: 1px solid #bdbdbd;
+        margin: 40px 0px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+
+@media (max-width: 1024px) {
+  .perros_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .perros_cont .cont_listas {
+      width: 80%;
+      height: 70px;
+      background: #dddddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10%; }
+    .perros_cont .img_perrosCont {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+      .perros_cont .img_perrosCont .cardPerro_cont {
+        width: 200px;
+        height: 230px;
+        border: 1px solid #bdbdbd;
+        margin: 40px 0px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+  .contacto_cont {
+    width: 100%;
+    height: 820px;
+    background: url(../img/contacto/perro_fondo_contacto2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contacto_cont .form_cont {
+      background: white;
+      width: 70%;
+      height: 85%;
+      border-radius: 35px; }
+  .navBar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navBar .navBar_logo {
+      width: 140px;
+      cursor: pointer;
+      margin-left: 50px; }
+    .navBar .Nav_Hamb_cont {
+      display: block;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .navBar .Nav_Hamb_cont #icoHamb {
+        width: 60px; }
+      .navBar .Nav_Hamb_cont #icoHambx {
+        width: 60px; }
+      .navBar .Nav_Hamb_cont .hamNavN_blockhamNavN_none {
+        display: none; }
+      .navBar .Nav_Hamb_cont .hamNavNx_block {
+        display: block; }
+      .navBar .Nav_Hamb_cont .hamNavNx_block {
+        display: none; }
+    .navBar .hamNav_list {
+      display: none; }
+    .navBar .hamNav_listhamNavNx_block {
+      width: 50%;
+      height: 453px;
+      background: #222222;
+      position: absolute;
+      margin-top: 99px;
+      top: 0; }
+      .navBar .hamNav_listhamNavNx_block .hamb_List_aCont {
+        width: 100%;
+        height: 100%; }
+        .navBar .hamNav_listhamNavNx_block .hamb_List_aCont .navBar_li {
+          width: 99%;
+          height: 110px;
+          margin: 2px 2px;
+          background-color: #ff0048;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .navBar .hamNav_listhamNavNx_block .hamb_List_aCont .navBar_li .hamb_a {
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+    .navBar .hamb_List_cont--show {
+      transform: translateY(0); }
+    .navBar .navBar_aBtn_Cont {
+      height: 50px;
+      margin-right: 60px;
+      display: none;
+      align-items: center; }
+      .navBar .navBar_aBtn_Cont .navBar_aCont {
+        height: 35px;
+        display: flex;
+        margin-right: 50px;
+        gap: 30px; }
+        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li {
+          width: 110px;
+          height: 100%;
+          display: flex;
+          align-items: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .navBar_a {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            color: #ff0048;
+            border: solid 2px #ff0048;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnnull {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            color: #ff0048;
+            border: solid 2px #ff0048;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnactive {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            background: #ff0048;
+            color: white;
+            border: solid 2px #ff0048;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .home {
+            background: #ff0048;
+            color: white; }
+      .navBar .navBar_aBtn_Cont .navBar_heart {
+        width: 34px; } }
+
+@media (max-width: 425px) {
+  .navBar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navBar .navBar_logo {
+      width: 140px;
+      cursor: pointer;
+      margin-left: 50px; }
+    .navBar .navBar_aBtn_Cont {
+      height: 50px;
+      margin-right: 60px;
+      display: none;
+      align-items: center; }
+      .navBar .navBar_aBtn_Cont .navBar_aCont {
+        height: 35px;
+        display: flex;
+        margin-right: 50px;
+        gap: 30px; }
+        .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li {
+          width: 110px;
+          height: 100%;
+          display: flex;
+          align-items: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .navBar_a {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            color: #ff0048;
+            border: solid 2px #ff0048;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnnull {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            color: #ff0048;
+            border: solid 2px #ff0048;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .btnactive {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            background: #ff0048;
+            color: white;
+            border: solid 2px #ff0048;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .navBar .navBar_aBtn_Cont .navBar_aCont .navBar_li .home {
+            background: #ff0048;
+            color: white; }
+      .navBar .navBar_aBtn_Cont .navBar_heart {
+        width: 34px; } }

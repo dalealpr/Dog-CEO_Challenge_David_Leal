@@ -1,0 +1,39 @@
+.footer{
+    .redes_cont{
+        height: 50px;
+        background: var(--color-title);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+
+        .redes_img{
+            width: 32px;
+            cursor: pointer;
+
+        }
+    }
+
+    .footer_contText{
+        height: 180px;
+        background: #292929;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .navBar_logo{
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        .footer_text{
+            font-size: 14px;
+            color: white;
+            font-weight: 300;
+        }
+    }
+
+}

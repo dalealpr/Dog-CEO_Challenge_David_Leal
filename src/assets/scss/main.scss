@@ -1,0 +1,28 @@
+// Reset estilos del navegador Web
+@import "reset/reset.scss";
+// Variables
+@import "variables/variables.scss";
+
+
+body{
+    background: var(--color-body);
+}
+
+
+// Nav
+@import "components/nav.scss";
+// Header
+@import "components/header.scss";
+// Nosotros
+@import "components/perros.scss";
+// Nosotros
+@import "components/nosotros.scss";
+// Contacto
+@import "components/contacto.scss";
+
+
+// Footer
+@import "components/footer.scss";
+
+//MediaQueries
+@import "components/mediaqueries.scss";

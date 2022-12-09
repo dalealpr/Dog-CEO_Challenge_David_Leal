@@ -1,0 +1,67 @@
+.contacto_cont{
+    width: 100%;
+    height: 820px;
+    background: url(../img/contacto/perro_fondo_contacto2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form_cont{
+        background: white;
+        width: 30%;
+        height: 85%;
+        border-radius: 35px;
+
+        .form_title{
+            text-align: center;
+            font-size: 23px;
+            margin-top: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        .usuario{
+            display:flex;
+            flex-direction: column;
+            margin-left: 60px;
+            margin-top: 35px;
+
+            .label{
+                margin-bottom: 14px;
+                font-size: 17px;
+                color: #808080;
+            }
+
+            .input{
+                width: 83%;
+                border-bottom: 1px solid #aaaaaa;
+                font-size: 16px;
+            }
+
+            .mensaje{
+                width: 83%;
+                height: 140px;
+                resize: none;
+                font-size: 16px;
+            }
+
+        }
+        .btn_enviar{
+            width: 76%;
+            margin-top: 35px;
+            margin-left: 60px;
+            background: var(--color-title);
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 13px 0;
+            border-radius: 20px;
+        }
+    }
+
+    
+}
